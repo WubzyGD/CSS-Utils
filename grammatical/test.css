@@ -1,0 +1,13 @@
+div {
+    padding: 30px 28px;
+    margin: 10px 12px;
+    color: white;
+    background-color: #333;
+    font-size: 20px;
+    width: max-content;
+    display: inline-block;
+}
+
+.coltest {
+    background: linear-gradient(to right, #5d60ca78 20%, #17171778 35%, #17171778 35%, #5d60ca99 50%, #5d60ca99 50%, #af218878 75%, #5d60ca78 90%);
+}

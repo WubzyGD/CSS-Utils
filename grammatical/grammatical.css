@@ -1,0 +1,90 @@
+.animation {animation-duration: 1s;}
+.quick-animation {animation-duration: .35s;}
+.slow-animation {animation-duration: 3s;}
+.very-slow-animation {animation-duration: 10s;}
+
+.eased {animation-timing-function: ease;}
+.eased-in {animation-timing-function: ease-in;}
+.eased-out {animation-timing-function: ease-out;}
+.eased-in-out {animation-timing-function: ease-in-out;}
+.overshot {animation-timing-function: cubic-bezier(.09,.36,.43,1.43);}
+.bouncy-overshot {animation-timing-function: cubic-bezier(.62,.39,.5,1.49);}
+.smooth, .smoothed, .linear {animation-timing-function: linear;}
+
+.in {animation-direction: normal;}
+.out, .reversed {animation-direction: reverse;}
+
+.once {animation-iteration-count: 1;}
+.twice {animation-iteration-count: 2;}
+.thrice {animation-iteration-count: 3;}
+.infinitely {animation-iteration-count: infinite;}
+
+.preserved, .but {animation-fill-mode: both;}
+.before-preserved, .and {animation-fill-mode: backwards;}
+.after-preserved, .that-is {animation-fill-mode: forwards;}
+
+.delayed-100ms {animation-delay: 100ms;}
+.delayed-200ms {animation-delay: 200ms;}
+.delayed-300ms {animation-delay: 300ms;}
+.delayed-400ms {animation-delay: 400ms;}
+.delayed-500ms {animation-delay: 500ms;}
+.delayed-600ms {animation-delay: 600ms;}
+.delayed-700ms {animation-delay: 700ms;}
+.delayed-800ms {animation-delay: 800ms;}
+.delayed-900ms {animation-delay: 900ms;}
+.delayed-1000ms, .delayed-1s {animation-delay: 1000ms;}
+.delayed-1100ms {animation-delay: 1100ms;}
+.delayed-1200ms {animation-delay: 1200ms;}
+.delayed-1300ms {animation-delay: 1300ms;}
+.delayed-1400ms {animation-delay: 1400ms;}
+.delayed-1500ms {animation-delay: 1500ms;}
+
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes grow {
+    from {transform: scale(.5, .5);}
+    to {transform: scale(1, 1);}
+}
+
+@keyframes grow-slightly {
+    from {transform: scale(.8, .8);}
+    to {transform: scale(1, 1);}
+}
+
+@keyframes blur {
+    from {filter: blur(0px);}
+    to {filter: blur(15px);}
+}
+
+@keyframes bg-move {
+    0% {background-position: 0%;}
+    100% {background-position: 200%;}
+}
+
+@keyframes dropdown {
+    from {transform: translateY(-100vh);}
+    to {transform: translateY(0);}
+}
+
+.fading {animation-name: fade;}
+.growing {animation-name: grow;}
+.slightly-growing {animation-name: grow-slightly;}
+.growing-and-fading {animation-name: grow, fade;}
+.slightly-growing-and-fading {animation-name: grow-slightly, fade;}
+.blurring {animation-name: blur;}
+
+.moving-bg {
+    animation-name: bg-move;
+    background-size: 200% auto !important;
+}
+
+.moving-text-color {
+    animation-name: bg-move;
+    background-size: 200% auto !important;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
